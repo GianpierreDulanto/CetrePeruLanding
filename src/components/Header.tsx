@@ -36,10 +36,16 @@ export default function Header() {
   };
 
   const handleNavClick = (sectionId: string) => {
-    if (pathname === '/') {
-      scrollToSection(sectionId);
-    } else {
-      window.location.href = `/#${sectionId}`;
+    if (sectionId === 'servicios') {
+      window.location.href = '/servicios';
+    } else if (sectionId === 'quienes-somos') {
+      window.location.href = '/quienes-somos';
+    } else if (sectionId === 'contacto') {
+      if (pathname === '/') {
+        scrollToSection(sectionId);
+      } else {
+        window.location.href = '/#contacto';
+      }
     }
   };
 
