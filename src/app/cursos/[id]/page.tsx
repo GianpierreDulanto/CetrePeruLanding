@@ -163,7 +163,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
                   Completa el formulario a continuación y nos pondremos en contacto contigo en breve.
                 </p>
                 <Link
-                  href="/#contacto"
+                  href="/contacto"
                   className="block w-full bg-red-800 text-white text-center py-3 rounded-lg hover:bg-red-900 transition-colors font-semibold"
                 >
                   Solicitar Información

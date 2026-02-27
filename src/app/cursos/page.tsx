@@ -71,7 +71,7 @@ export default function CursosPage() {
           <p className="text-gray-700 text-lg mb-8 max-w-2xl mx-auto">
             Contáctanos para más información sobre fechas, horarios y modalidades de capacitación.
           </p>
-          <Link href="/#contacto">
+          <Link href="/contacto">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
