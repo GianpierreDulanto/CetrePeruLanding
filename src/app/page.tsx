@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Link from "next/link";
-import { ArrowRight, Wrench, Users, MessageSquare } from "lucide-react";
+import { ArrowRight, Wrench, Users, MessageSquare, BookOpen } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Explora nuestras soluciones</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Servicios Card */}
             <Link href="/servicios">
               <Card className="p-8 bg-white border-red-200 hover:shadow-lg hover:border-red-400 transition-all cursor-pointer h-full">
@@ -49,6 +49,24 @@ export default function Home() {
                 </p>
                 <div className="flex items-center text-red-800 font-semibold gap-2">
                   Conoce más <ArrowRight className="w-4 h-4" />
+                </div>
+              </Card>
+            </Link>
+
+            {/* Cursos Card */}
+            <Link href="/cursos">
+              <Card className="p-8 bg-white border-red-200 hover:shadow-lg hover:border-red-400 transition-all cursor-pointer h-full">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-3 bg-red-100 rounded-lg">
+                    <BookOpen className="w-8 h-8 text-red-800" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-800">Cursos</h3>
+                </div>
+                <p className="text-gray-700 text-lg mb-4">
+                  Explore nuestros programas de capacitación especializados en Ensayos No Destructivos (END).
+                </p>
+                <div className="flex items-center text-red-800 font-semibold gap-2">
+                  Ver cursos <ArrowRight className="w-4 h-4" />
                 </div>
               </Card>
             </Link>

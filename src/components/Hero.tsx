@@ -6,7 +6,7 @@ import { ArrowRight, Sparkles, CheckCircle, TrendingUp } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-white to-slate-50 relative overflow-hidden">
+    <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-white to-slate-50 relative overflow-hidden">
       {/* Aceternity-style grid background - disabled on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <div className="absolute top-0 -left-4 w-72 h-72 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />
